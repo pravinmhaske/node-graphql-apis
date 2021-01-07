@@ -5,13 +5,20 @@
 } -->
 
 
-<!-- mutation{
-  addUser(fullname:"Ibe Ogele",username:"ibesoft",phone_number:"2348102331921",city:"Enugu"){
-    id
-    fullname
-    username
-    phone_number
-    city
+<!-- 
+
+mutation {
+  userCreateOne(record: {name: "www.prisma.io", email: "Prisma replaces traditional ORMs"}) {
+     record{
+      name
+    }
+  }
+}
+
+mutation{
+  userCreateOne(name:"Ibe Ogele",email:"ibesoft@test.com"){
+    name,
+    email
   }
 }
 
@@ -23,4 +30,5 @@ query{
     phone_number
     city
   }
-} -->
+}
+ -->
